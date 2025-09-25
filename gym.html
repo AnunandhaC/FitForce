@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitForce | Personal Fitness Trainer</title>
+  <link rel="stylesheet" href="gym.css" />
+  <script defer src="gym.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">FitForce</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#prgm">Programs</a></li>
+        <li><a href="#trainer">Trainer</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="bmi" class="bmi-section">
+  <h2>Check Your BMI & Get a Fitness Plan</h2>
+  <div class="bmi-form">
+    <input type="number" id="weight" placeholder="Weight (kg)" />
+    <input type="number" id="height" placeholder="Height (cm)" />
+    <button onclick="calculateBMI()">Get My Plan</button>
+    <p id="bmi-result"></p>
+    <div id="fitness-plan" class="fitness-plan"></div>
+  </div>
+</section>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h2>Transform Your Body & Mind</h2>
+      <p>Train smarter, live stronger — with expert guidance</p>
+      <a href="file:///C:/Users/chand/html/gym1.html" class="btn">Join Now</a>
+    </div>
+  </section>
+
+  <!-- About Trainer -->
+  <section class="about" id="trainer">
+    <div class="about-container">
+      <img src="https://www.kindpng.com/picc/m/162-1627076_gym-male-cartoon-png-transparent-png.png" alt="Trainer" />
+      <div>
+        <h2>About Me</h2>
+        <p>I’m Alex, a certified fitness coach with over 7 years of experience in helping people reach their full potential. Specializing in weight training, fat loss, and flexibility.</p>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+</section>
+
+
+  <!-- Programs -->
+  <section class="programs" id="prgm">
+    <h2>Programs</h2>
+    <div class="program-cards">
+      <div class="card">
+        <i class="fas fa-dumbbell"></i>
+        <h3>Weight Training</h3>
+        <p>Build muscle and strength with progressive resistance workouts.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-heartbeat"></i>
+        <h3>Fat Loss</h3>
+        <p>Effective cardio and nutrition guidance to burn fat efficiently.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-child"></i>
+        <h3>Flexibility</h3>
+        <p>Improve posture and mobility with guided stretching & yoga.</p>
+      </div>
+    </div>
+  </section>
+  
+
+<section id="workouts" class="workout-section">
+  <h2>Workout Routines</h2>
+  <div class="workout-cards">
+    <div class="card">
+      <h3>Beginner</h3>
+      <ul>
+        <li>3x/week Full body workout</li>
+        <li>Squats, Push-ups, Planks</li>
+        <li>15-20 min cardio</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Intermediate</h3>
+      <ul>
+        <li>4x/week Split workout (Upper/Lower)</li>
+        <li>Deadlifts, Bench Press, Pull-ups</li>
+        <li>20-30 min HIIT cardio</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Advanced</h3>
+      <ul>
+        <li>5-6x/week Targeted muscle groups</li>
+        <li>Weighted exercises & progressive overload</li>
+        <li>Cardio 30+ min or HIIT</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="diet" class="diet-section">
+  <h2>Diet Plans</h2>
+  <div class="diet-cards">
+    <div class="card">
+      <h3>Weight Gain</h3>
+      <ul>
+        <li>High-protein breakfast (eggs, oats)</li>
+        <li>Snack: nuts & smoothie</li>
+        <li>Lunch: rice + chicken/fish + veggies</li>
+        <li>Dinner: quinoa + lentils + salad</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Maintenance</h3>
+      <ul>
+        <li>Balanced carbs, protein, fats</li>
+        <li>Vegetables & fruits in each meal</li>
+        <li>Moderate portion sizes</li>
+        <li>Hydration: 2-3L water/day</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Fat Loss</h3>
+      <ul>
+        <li>Low-calorie, high protein diet</li>
+        <li>Vegetables, lean meat, eggs</li>
+        <li>Limit sugar and processed foods</li>
+        <li>Hydrate & include fiber</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<section id="progress" class="progress-section">
+  <h2>Track Your Progress</h2>
+  <div class="progress-form">
+    <input type="number" id="weight-log" placeholder="Weight (kg)" />
+    <input type="number" id="waist-log" placeholder="Waist (cm)" />
+    <button onclick="logProgress()">Add Entry</button>
+  </div>
+  <div id="progress-log" class="progress-log"></div>
+</section>
+
+
+<section id="contact" class="contact-section">
+  <h2>Contact Me</h2>
+  <div class="contact-info">
+    <p><strong>Name:</strong> Alex</p>
+    <p><strong>Email:</strong> <a href="mailto:fitforce@gmail.com">fitforce@gmail.com</a></p>
+    <p><strong>Phone:</strong> +91 98765 43210</p>
+    <p><strong>Location:</strong> Kerala, India</p>
+  </div>
+</section>
+  
+  <footer>
+    <p>© 2025 FitForce. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
