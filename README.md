@@ -4,7 +4,9 @@ FitForce is a responsive fitness website built using **HTML, CSS, and JavaScript
 It helps users check their **BMI**, get **personalized fitness plans**, explore **workout routines & diet plans**, track their **progress**, and connect with a trainer.  
 
 ---
+# Check it live : https://anunandhac.github.io/FitForce/
 
+---
 ## 🚀 Features
  
 - 📊 **BMI Calculator** – Provides fitness status & tailored plans  
